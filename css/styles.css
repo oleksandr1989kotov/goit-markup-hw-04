@@ -96,6 +96,7 @@ font-weight: 500;
     color: #2e2f42;
     padding-top: 24px;
         padding-bottom: 24px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -117,6 +118,7 @@ font-weight: 500;
 .adress-list-item {
     display: flex;
     gap: 40px;
+
 }
 
 .adress-link {
@@ -137,9 +139,15 @@ font-weight: 500;
 .title-section {
 background: #2e2f42;
 width: 1440px;
+max-height: 600px;
 padding-top: 188px;
 padding-bottom: 188px;
 margin: auto;
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background_img/people_office_jpg.jpg);
+background-repeat: no-repeat;
+background-position: center center;
+background-origin: border-box;
+background-color: rgba(46, 47, 66, 0.7);
 }
 
 .title-name {
@@ -153,6 +161,15 @@ margin: auto;
         margin-right: auto;
         margin-bottom: 48px;
         text-align: center;}
+
+        /* .hero-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+           
+
+        } */
 
 
 .title-button {
@@ -205,8 +222,29 @@ margin: auto;
 
 .benefits-list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 24px;
+ 
+}
+
+.benefits-icon-list {
+    display: flex;
+    padding-left: auto;
+    padding-right: auto;
+    gap: 24px;
+}
+
+.benefits-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #8e8f99;
+border-radius: 4px;
+width: 264px;
+height: 112px;
+background-color: #f4f4fd;
+margin-bottom: 8px;
 }
 
 .benefits-list-item {
@@ -276,6 +314,21 @@ margin: auto;
             color: #434455;
         text-align: center;}
 
+        .social-list {
+            background-color: #2e2f42;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+           
+
+        }
+
+        .social-list-icon {
+            fill:#FFFFFF;
+          
+        }
+
+
     /* ========/ Team section ======== */
 
     /* ======== Portfolio section ======== */
@@ -325,7 +378,7 @@ margin: auto;
 
     /* ======== Page Footer styles ======== */
 
-    .page-footer {
+    .page-footer {display: flex;
         background-color: #2e2f42;
         padding: 100px 0;
     }
