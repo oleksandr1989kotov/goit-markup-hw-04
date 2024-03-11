@@ -138,7 +138,7 @@ font-weight: 500;
 
 .title-section {
 background: #2e2f42;
-width: 1440px;
+max-width: 1440px;
 max-height: 600px;
 padding-top: 188px;
 padding-bottom: 188px;
@@ -290,7 +290,8 @@ margin-bottom: 8px;
        }     
     
         .team-picture {
-            background-color: #fff;}
+            background-color: #fff;
+        }
 
             .team-name-container {
                 padding-top: 32px;
@@ -312,13 +313,26 @@ margin-bottom: 8px;
             line-height: 1.5;
             letter-spacing: 0.02em;
             color: #434455;
-        text-align: center;}
+        text-align: center;
+         margin-bottom: 8px;}
 
         .social-list {
-            background-color: #2e2f42;
             display: flex;
             justify-content: center;
+            align-items: center;
             gap: 24px;
+        }
+
+        .social-list-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #4d5ae5;
+            gap: 24px;
+            fill: #FFFFFF;
            
 
         }
@@ -326,6 +340,11 @@ margin-bottom: 8px;
         .social-list-icon {
             fill:#FFFFFF;
           
+        }
+
+        .social-list-link:hover,
+        .social-list-link:focus {
+            background-color: #404bbf;
         }
 
 
@@ -378,13 +397,22 @@ margin-bottom: 8px;
 
     /* ======== Page Footer styles ======== */
 
-    .page-footer {display: flex;
+    .page-footer {
         background-color: #2e2f42;
         padding: 100px 0;
     }
+
+    .footer-container {
+        display: flex;
+    }
+
+    .page-footer-container {
+        display: flex;
+        flex-direction: column;
+        margin-right: 120px;
+    }
     
-.footer-logo {display: inline-block
-    ;
+.footer-logo {display: inline-block;
     font-weight: 700;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
@@ -408,6 +436,25 @@ margin-bottom: 8px;
     color: #f4f4fd;
     margin-right: auto;
     max-width: 264px;
+}
+
+.page-footer-social-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #D9D9D9;
+
+}
+
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+    background-color: #31D0AA;
 }
 
 /* ========/ Page Footer styles ======== */
