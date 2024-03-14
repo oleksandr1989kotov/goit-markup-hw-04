@@ -432,6 +432,7 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .page-footer-container {
@@ -469,14 +470,18 @@ img {
 .page-footer-social-list {
   display: flex;
   flex-direction: column;
-  row-gap: 16px;
+  gap: 16px;
 }
 
 .social-media {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  color: #d9d9d9;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 
 .footer-social-list-link:hover,
