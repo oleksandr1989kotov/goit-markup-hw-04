@@ -241,7 +241,7 @@ img {
   gap: 24px;
 }
 
-.benefits-icon {
+.benefits-icon-container {
   display: flex;
   align-items: center;
   justify-content: center;
